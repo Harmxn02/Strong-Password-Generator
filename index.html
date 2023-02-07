@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Strong Password Generator - by Harman Singh</title>
+		<link rel="stylesheet" href="/assets/css/style.css" />
+		<script src="/assets/js/script.js"></script>
+	</head>
+	<body>
+		<h1>Here is your secure and random password</h1>
+		<div id="password">
+			<input
+				onclick="copyToClipboard('thePassword')"
+				type="text"
+				id="thePassword"
+				placeholder="change something to generate"
+			/>
+			<p id="click" onclick="copyToClipboard('thePassword')">
+				click to copy
+			</p>
+		</div>
+
+		<form>
+			<div>
+				<div>
+					<input type="checkbox" checked id="uppercase" />
+					<label for="uppercase">Uppercase</label>
+				</div>
+
+				<div>
+					<input type="checkbox" checked id="lowercase" />
+					<label for="lowercase">Lowercase</label>
+				</div>
+
+				<div>
+					<input type="checkbox" checked id="numbers" />
+					<label for="numbers">Numbers</label>
+				</div>
+
+				<div>
+					<input type="checkbox" checked id="symbols" />
+					<label for="symbols">Symbols</label>
+				</div>
+			</div>
+
+			<div id="length">
+				<label for="slider">Length</label>
+				<input type="range" id="slider" value="15" min="0" max="30" />
+				<p id="length_value"></p>
+			</div>
+		</form>
+	</body>
+</html>
