@@ -25,18 +25,23 @@ form {
 	margin: 0 auto;
 }
 
-#click {
+#buttons {
+	display: flex;
+}
+
+#buttons > p {
 	background-color: darkolivegreen;
 	width: fit-content;
 	margin: 2em auto;
 	border-radius: 10px;
 	padding: 0.5em;
+	opacity: 70%;
 
 	transition: opacity 500ms ease-in-out;
 }
 
-#click:hover {
-	opacity: 50%;
+#buttons > p:hover {
+	opacity: 100%;
 }
 
 #length {

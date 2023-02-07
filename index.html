@@ -17,9 +17,13 @@
 				id="thePassword"
 				placeholder="change something to generate"
 			/>
-			<p id="click" onclick="copyToClipboard('thePassword')">
-				click to copy
-			</p>
+			<div id="buttons">
+				<p id="click" onclick="copyToClipboard('thePassword')">
+					click to copy
+				</p>
+
+				<p id="reset" onclick="init()">generate another</p>
+			</div>
 		</div>
 
 		<form>
